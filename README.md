@@ -1,2 +1,5 @@
 # Speech Recognition
-To ensure clarity, a clear definition of terms will need to be clarified regard what constitutes *Speech*, *Speaker*, and *Voice* Recognition element
+Text to Speech with ability to recognize language used by *Speakers*
+
+# Speaker Recognition
+In a multi-people conversation derived from **Speech Recognition** can we identify each speaker and associate them with particular speech
