@@ -19,7 +19,8 @@ pip install openai-whisper jiwer
 
 All metrics are computed between `reference` by a human and `hypothesis` transcriptions
 
-# Transcribing Audio
+## Transcribing Audio
+
 ```python
 import jiwer
 import whisper
@@ -58,6 +59,7 @@ wer = jiwer.wer(
 
 print(f"Word Error Rate (WER) :", wer)
 # hypothesis = "I am *a* 32 *year* old and I am *as* a developer"
+
 ```
 
 ## Calculating WER
