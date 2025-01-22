@@ -10,11 +10,6 @@ from time import time
 
 BASE = os.path.dirname(os.path.realpath(__file__))
 
-# 'ffmpeg -i ' + audio_in + '.mp3 -af "volume=<' + vol_level + '>" ' + audio_out + '.mp3'
-
-# Normalization
-# 'ffmpeg -i ' + audio_in + '.mp4 -af "loudnorm=I=-16:LRA=11" ' + audio_out+ '.mp4'
-
 def main(dat):
     print("""Sort Initial Media """, dat)
 
@@ -55,9 +50,8 @@ def main(dat):
 
                     media[f] = {}
                     media[f]['parent'] = x
-                    media[f]['model'] = False
+                    media[f]['models'] = {}
                     media[f]['reference'] = False
-                    media[f]['hypothesis'] = False
                     media[f]['created'] = int(time())
 
                     print("""Media Encode File """, f)
