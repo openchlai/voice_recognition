@@ -1,6 +1,34 @@
 # Environment Setup and Runtime
 
 ## 1. Create a Python Virtual Environment
+We recommend `workon` command, but you can use `virtualenv` to manage your virtual environments. Below instructions can work on `MacOS` and `Windows OS`, just make adjustment where applicable
+
+```sh
+sudo apt install python3-pip python3-virtualenv
+```
+
+## Create the following `virtualenvs` dir as hidden folder in your $HOME
+
+```sh
+mkdir $HOME/.virtualenvs
+pip3 install virtualenvwrapper
+```
+
+## Update your `local env` by editing `.bashrc` file. You can use `vim` or `nano`, or any CLI text editor
+
+```sh
+nano $HOME/.bashrc
+```
+
+## Paste the following at the bottom of thr `.bashrc` file
+
+```sh
+#Virtualenvwrapper settings:
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_VIRTUALENV=/home/bitzml/.local/bin/virtualenv
+source ~/.local/bin/virtualenvwrapper.sh
+```
 
 ## 2. Install required libraries
 We will assume you are using `mkvirtualenv` command to manage your virtual environments. Once you ativate your virtual environment, run the following command `pip install -r requirements.txt`
