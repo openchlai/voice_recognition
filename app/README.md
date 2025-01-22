@@ -53,5 +53,5 @@ After completing sorting above media, the data for processed and sorted audio fi
 This `dict` will form the foundation of data captured to track progress across the test exercise, with more nested `key-value` pairs added.
 
 ## 6. Visualization of Progress
-A separate `python-streamlit` web app will be made available for this purpose
+A separate `python-streamlit` web app will be made available for this purpose. This project is available in the directory `viz` for *visualization*
 
