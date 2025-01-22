@@ -16,4 +16,14 @@ A directory named `media` will be created. For testing, the `demo` directory wil
 Every audio in the `source` directory needs to have a corresponding `reference` transcription which will be usd to compare with actual transcription. Save this reference on a text file named after the audio file name. For example, a file named `my classic audio.mp3` should have a corresponding `reference` text file save as `my classic audio.txt` 
 
 ## 5. Master Audio Data
-After completing sorting above media, the data for processed and sorted audio files will be stored in a `master.json` file found within the base of `media` directory.
+After completing sorting above media, the data for processed and sorted audio files will be stored in a `master.json` file found within the base of `media` directory. Below is a quick guide on the `key-values` of `master.json`
+
+1. `parent` is the original filename as **SHA256** encrypted
+2. `models` consists of nested dictionary of actual runtime transcription per model used.
+3. `reference` refers to the human-made transcription of test audios
+
+This `dict` will form the foundation of data captured to track progress across the test exercise, with more nested `key-value` pairs added.
+
+## 6. Visualization of Progress
+A separate `python-streamlit` web app will be made available for this purpose
+
