@@ -12,5 +12,8 @@ When done with above preparations, run the following command: `python sortmedia.
 
 A directory named `media` will be created. For testing, the `demo` directory will be the `source` and a new directory named `media/volume` will be created as `dest` for **destination**. You can change the `source` and `dest` directory from the file.
 
-## 4. Master Audio Data
+## 4. Reference Transcription Text
+Every audio in the `source` directory needs to have a corresponding `reference` transcription which will be usd to compare with actual transcription. Save this reference on a text file named after the audio file name. For example, a file named `my classic audio.mp3` should have a corresponding `reference` text file save as `my classic audio.txt` 
+
+## 5. Master Audio Data
 After completing sorting above media, the data for processed and sorted audio files will be stored in a `master.json` file found within the base of `media` directory.
